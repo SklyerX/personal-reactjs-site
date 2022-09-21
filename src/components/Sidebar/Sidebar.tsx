@@ -182,14 +182,18 @@ const Sidebar = () => {
           </div>
         </div>
       ))}
-      <Rpc
-        resposive="Desktop"
-        appName={appName}
-        dirName={dirName}
-        fileName={fileName}
-        largeImage={largeImage}
-        smallImage={smallImage}
-      />
+      {showRpc === true ? (
+        <Rpc
+          resposive="Desktop"
+          appName={appName}
+          dirName={dirName}
+          fileName={fileName}
+          largeImage={largeImage}
+          smallImage={smallImage}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };
