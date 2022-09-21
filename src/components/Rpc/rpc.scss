@@ -1,0 +1,37 @@
+.rpc {
+  border-top: 2px solid #202020;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .image {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    img:first-child {
+      border-radius: 10px;
+      width: 6rem;
+    }
+    img:last-child {
+      border-radius: 100%;
+      width: 3rem;
+      top: 3.5rem;
+      left: 4em;
+      position: absolute;
+    }
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  span {
+    color: #707070;
+    font-weight: bold;
+  }
+}

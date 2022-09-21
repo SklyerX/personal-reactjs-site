@@ -1,0 +1,84 @@
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  height: 100vh;
+  z-index: 3;
+  border-right: 2px solid #202020;
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+    a {
+      font-size: 1.4rem;
+      color: #4c4c4c;
+      transition: 0.3s color ease;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+  }
+  .socials a:last-child {
+    font-size: 1rem;
+  }
+
+  .sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      border-radius: 10000px;
+      width: 7rem;
+    }
+
+    .username {
+      color: #fff;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .item {
+      margin-bottom: 0.5rem;
+
+      .active {
+        color: #fff;
+      }
+
+      a {
+        color: #4c4c4c;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: 0.3s color ease;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .sidebar {
+    display: block;
+  }
+}

@@ -1,0 +1,41 @@
+.skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+
+  .skill {
+    margin-top: 2rem;
+    border: 2px solid #202020;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: 0.3s transform ease;
+
+    img {
+      width: 5rem;
+    }
+  }
+
+  .skill:hover {
+    transform: translateY(-1rem);
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .skills {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .skills {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .skill {
+      padding: 3rem;
+
+      img {
+        width: 6rem;
+      }
+    }
+  }
+}

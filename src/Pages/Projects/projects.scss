@@ -1,0 +1,131 @@
+.projects {
+  .projectsCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-top: 5rem;
+
+    a {
+      text-decoration: none;
+
+      .projectCard {
+        width: 25rem;
+        border: 2px solid #202020;
+        height: fit-content;
+        border-radius: 15px;
+        box-sizing: border-box;
+        transition: 0.3s all ease-in;
+        margin-bottom: 2rem;
+
+        .projectCardTop {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          margin-top: 1rem;
+
+          h3 {
+            color: #fff;
+          }
+
+          span {
+            color: #999;
+          }
+
+          .projectCardLeft {
+            img {
+              width: 5rem;
+              border-radius: 10px;
+            }
+          }
+        }
+
+        .projectCardBottom {
+          padding: 1rem;
+          font-size: 1rem;
+          color: #ccc;
+          margin-top: 2rem;
+        }
+
+        .projectCardBottom {
+          border-top: 2px solid #202020;
+        }
+      }
+
+      .projectCard:hover {
+        background-color: #202020;
+        transform: translateY(-1rem);
+      }
+    }
+  }
+
+  .open-source-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    .open-source-card {
+      background-color: #101010;
+      border-radius: 10px;
+      width: 90%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      transition: 0.3s all ease;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      padding: 0 1rem 1rem 1rem;
+
+      .open-source-left {
+        margin-right: 1rem;
+        margin-top: 1rem;
+
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 5px;
+        }
+      }
+
+      .open-source-right {
+        h3 {
+          color: #fff;
+        }
+        span {
+          color: #999;
+        }
+      }
+    }
+
+    .open-source-card:hover {
+      background-color: #202020;
+    }
+  }
+}
+
+@media screen and (min-width: 1270px) {
+  .projects {
+    .projectsCards {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .open-source-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .projects {
+    .projectsCards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .open-source-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
