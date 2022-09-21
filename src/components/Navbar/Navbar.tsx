@@ -53,13 +53,13 @@ const Navbar = () => {
         });
     } else {
       if (name.length === 0) {
-        document.querySelector("#name").style.borderColor = "#f00";
+        toast.error("Failure! name is empty!");
       }
       if (email.length === 0) {
-        document.querySelector("#email").style.borderColor = "#f00";
+        toast.error("Failure! email is empty!");
       }
       if (message.length === 0) {
-        document.querySelector("#textarea").style.borderColor = "#f00";
+        toast.error("Failure! message is empty!");
       }
     }
   };
