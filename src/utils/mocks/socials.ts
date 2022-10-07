@@ -1,7 +1,7 @@
 export const socials = [
   {
     id: 1,
-    path: "https://github.com/SkylerX",
+    path: "https://github.com/SklyerX",
     iconName: "fa-brands fa-github",
   },
   {
